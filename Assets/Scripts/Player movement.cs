@@ -11,8 +11,6 @@ public class Playermovement : MonoBehaviour
     private float jumpingpower = 16f;
     private bool isFaceingRight = true;
 
-/*    private Animator anim;
-    private string Walk_Animation = "Walk";*/
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -28,7 +26,7 @@ public class Playermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AnimatePlayer();
+      
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
@@ -68,23 +66,6 @@ public class Playermovement : MonoBehaviour
 
     }
 
-   /* void AnimatePlayer()
-    {
-        if (rb.velocity.x > 0)
-        {
-            anim.SetBool(Walk_Animation, true);
-            isFaceingRight = false;
-        }
-        else if (rb.velocity.x < 0)
-        {
-            anim.SetBool(Walk_Animation, true);
-            isFaceingRight = true;
-        }
-        else
-        {
-            anim.SetBool(Walk_Animation, false);
-        }
-    }*/
 
 
 }
